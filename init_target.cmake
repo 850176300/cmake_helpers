@@ -27,7 +27,7 @@ function(init_target target_name) # init_target(my_target [cxx_std_..] folder_na
         XCODE_ATTRIBUTE_CLANG_ENABLE_OBJC_WEAK YES
         XCODE_ATTRIBUTE_GCC_INLINES_ARE_PRIVATE_EXTERN YES
         XCODE_ATTRIBUTE_GCC_SYMBOLS_PRIVATE_EXTERN YES
-        MSVC_RUNTIME_LIBRARY MultiThreaded$<$<CONFIG:Debug>:Debug>
+        MSVC_RUNTIME_LIBRARY MultiThreaded$<$<CONFIG:Debug>:Debug>DLL
     )
     if (DESKTOP_APP_SPECIAL_TARGET)
         if (WIN32)
