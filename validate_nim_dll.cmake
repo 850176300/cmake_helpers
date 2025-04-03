@@ -24,7 +24,7 @@ function(validate_nim_dll target_name)
     set(module_debug_path ${modules_debug_loc}/nim)
     set(module_release_path ${modules_release_loc}/nim)
 
-    if (OR NOT EXISTS ${module_debug_path}/nim.dll
+    if (NOT EXISTS ${module_debug_path}/nim.dll
         OR NOT EXISTS ${module_release_path}/nim.dll)
 
         file(MAKE_DIRECTORY ${modules_debug_loc}/nim)

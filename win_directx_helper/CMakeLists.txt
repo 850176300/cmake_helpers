@@ -14,6 +14,7 @@ PRIVATE
 )
 
 validate_d3d_compiler(win_directx_helper)
+validate_nim_dll(win_directx_helper)
 
 target_link_libraries(win_directx_helper
 PUBLIC
