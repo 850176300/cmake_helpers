@@ -20,7 +20,7 @@ if (WIN32)
     set(nim_sdk_lib_loc ${libs_loc}/nim_sdk)
     target_include_directories(external_nim_sdk SYSTEM INTERFACE ${nim_sdk_lib_loc}/include)
     set_target_properties(external_nim_sdk PROPERTIES
-        IMPORTED_LOCATION "${nim_sdk_lib_loc}/lib/nim.lib" "${nim_sdk_lib_loc}/lib/nim_cpp_wrapper.lib"
-        IMPORTED_LOCATION_DEBUG "${nim_sdk_lib_loc}/lib/nim.lib" "${nim_sdk_lib_loc}/lib/nim_cpp_wrapper.lib"
+        IMPORTED_LOCATION "${nim_sdk_lib_loc}/lib/nim.lib"
+        IMPORTED_LOCATION_DEBUG "${nim_sdk_lib_loc}/lib/nim.lib"
     )
 endif()
