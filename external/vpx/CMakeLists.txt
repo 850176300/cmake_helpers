@@ -32,8 +32,8 @@ if (WIN32)
     endif()
     set(vpx_lib_loc ${libs_loc}/local/lib/${libvpx_release_folder})
     set_target_properties(external_vpx PROPERTIES
-        IMPORTED_LOCATION "${vpx_lib_loc}/vpxmd.lib"
-        IMPORTED_LOCATION_DEBUG "${vpx_lib_loc}/vpxmd.lib"
+        IMPORTED_LOCATION "${vpx_lib_loc}/vpxmt.lib"
+        IMPORTED_LOCATION_DEBUG "${vpx_lib_loc}/vpxmt.lib"
     )
 elseif (APPLE)
     target_include_directories(external_vpx SYSTEM
